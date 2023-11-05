@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/jenkins")
-
 public class JenkinsController {
     @GetMapping("/get/{name}")
     public String getMessage(@PathVariable (value="name") String userName) {
